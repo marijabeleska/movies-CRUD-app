@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: movies
+data:
+  DATABASE_URL: "postgresql+psycopg2://movies_user:movies_pass@postgres:5432/movies_db"

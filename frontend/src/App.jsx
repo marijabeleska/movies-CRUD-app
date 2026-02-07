@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "";
 
 function clampRating(v) {
   if (v === "" || v === null || v === undefined) return "";
