@@ -23,7 +23,7 @@ app.add_middleware(
 
 Base.metadata.create_all(bind=engine)
 
-@app.get("/health")
+@app.get("/api/health")
 def health(db: Session = Depends(get_db)):
     db.execute(text("SELECT 1"))
     return {"status": "ok", "db": "connected"}
